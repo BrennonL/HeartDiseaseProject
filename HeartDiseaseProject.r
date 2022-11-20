@@ -1,5 +1,7 @@
 # Open the hreart.csv
 heart_disease_data = read.delim("C:\\Users\\Brenn\\OneDrive\\Fall 2022\\CSE310\\Sprint 3\\HeartDiseaseProject\\heart.csv", header = TRUE, sep = ",")
+
+# this is here for debuging purposes
 print(heart_disease_data)
 
 
@@ -14,16 +16,11 @@ main <- function()
   restingHB_types <- list()
   restingHB_count <- list()
 
-  times_to_iterate = 1
-  print(heart_disease_data)
-  for (line in heart_disease_data)
-  {
-    print(line)
-  }
+
   
-  for(i in 1:length(data$HeartDisease))
+  for(i in 1:10)
   {
-    print(data$HeartDisease[i])
+    print(heart_disease_data[12, 8])
   }
   
 }
